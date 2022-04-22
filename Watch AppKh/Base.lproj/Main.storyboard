@@ -103,11 +103,11 @@
                         <viewLayoutGuide key="safeArea" id="UWn-Si-ozt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Discover" image="safari.fill" catalog="system" id="0HF-wT-xiP"/>
+                    <navigationItem key="navigationItem" title="Discover" largeTitleDisplayMode="always" id="pBy-db-FLh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3FY-Dr-TWe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1759" y="141"/>
+            <point key="canvasLocation" x="2668.1159420289855" y="140.625"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="RZR-ot-NGU">
@@ -122,12 +122,31 @@
                     <connections>
                         <segue destination="Iw7-Ac-5bc" kind="relationship" relationship="viewControllers" id="tUE-55-Hp1"/>
                         <segue destination="CL9-VW-tOF" kind="relationship" relationship="viewControllers" id="Atf-zo-GC3"/>
-                        <segue destination="Gq1-Ie-O7n" kind="relationship" relationship="viewControllers" id="Mgy-kg-2PY"/>
+                        <segue destination="5gm-dn-VvD" kind="relationship" relationship="viewControllers" id="Mgy-kg-2PY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tiY-Ci-L2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-459" y="141"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="gxH-4T-19z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5gm-dn-VvD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discover" image="safari.fill" catalog="system" id="0HF-wT-xiP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3DW-xj-mRi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Gq1-Ie-O7n" kind="relationship" relationship="rootViewController" id="zrb-sE-iPZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFs-FC-WmP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757.9710144927537" y="140.625"/>
         </scene>
     </scenes>
     <resources>
