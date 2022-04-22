@@ -27,7 +27,7 @@
         <!--My Watch-->
         <scene sceneID="l57-cY-jtr">
             <objects>
-                <viewController id="Iw7-Ac-5bc" customClass="ViewController" customModule="Watch_AppKh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Iw7-Ac-5bc" customClass="MyWatchViewController" customModule="Watch_AppKh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qme-gz-0LY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,18 +56,24 @@
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Learn more about Apple Watch"/>
+                                <connections>
+                                    <action selector="linkButton:" destination="Iw7-Ac-5bc" eventType="touchUpInside" id="hpA-E0-zQc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fS-K2-S2Q">
-                                <rect key="frame" x="40" y="733" width="334" height="40"/>
+                                <rect key="frame" x="40" y="723" width="334" height="50"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Ymf-9p-weT"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ymf-9p-weT"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Start Paring">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="linkButton:" destination="Iw7-Ac-5bc" eventType="touchUpInside" id="lWX-R5-6Vy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="k4t-gS-SO4"/>
@@ -88,6 +94,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Watch" image="applewatch.side.right" catalog="system" id="FPS-Lz-Ufy"/>
+                    <connections>
+                        <outlet property="startParingBtn" destination="4fS-K2-S2Q" id="l0W-4w-N4D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="57k-9w-bms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

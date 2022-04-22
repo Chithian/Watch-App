@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		43957ED428130626007F43C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43957ED328130626007F43C9 /* AppDelegate.swift */; };
 		43957ED628130626007F43C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43957ED528130626007F43C9 /* SceneDelegate.swift */; };
-		43957ED828130626007F43C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43957ED728130626007F43C9 /* ViewController.swift */; };
+		43957ED828130626007F43C9 /* MyWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43957ED728130626007F43C9 /* MyWatchViewController.swift */; };
 		43957EDB28130626007F43C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43957ED928130626007F43C9 /* Main.storyboard */; };
 		43957EDD28130627007F43C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43957EDC28130627007F43C9 /* Assets.xcassets */; };
 		43957EE028130627007F43C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43957EDE28130627007F43C9 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		43957ED028130625007F43C9 /* Watch AppKh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch AppKh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43957ED328130626007F43C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43957ED528130626007F43C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		43957ED728130626007F43C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43957ED728130626007F43C9 /* MyWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWatchViewController.swift; sourceTree = "<group>"; };
 		43957EDA28130626007F43C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43957EDC28130627007F43C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43957EDF28130627007F43C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				43957ED328130626007F43C9 /* AppDelegate.swift */,
 				43957ED528130626007F43C9 /* SceneDelegate.swift */,
-				43957ED728130626007F43C9 /* ViewController.swift */,
+				43957ED728130626007F43C9 /* MyWatchViewController.swift */,
 				43957ED928130626007F43C9 /* Main.storyboard */,
 				43957EDC28130627007F43C9 /* Assets.xcassets */,
 				43957EDE28130627007F43C9 /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43957ED828130626007F43C9 /* ViewController.swift in Sources */,
+				43957ED828130626007F43C9 /* MyWatchViewController.swift in Sources */,
 				43957ED428130626007F43C9 /* AppDelegate.swift in Sources */,
 				43957ED628130626007F43C9 /* SceneDelegate.swift in Sources */,
 			);
