@@ -1,24 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NJs-RH-5nb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Face Gallery-->
+        <scene sceneID="VGY-x8-PmU">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="CL9-VW-tOF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HTe-sD-Qzx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="P6c-0z-NKW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Face Gallery" image="applewatch.watchface" catalog="system" id="ocO-mp-x2g"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7w7-1B-UO1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="603" y="674"/>
+        </scene>
+        <!--My Watch-->
+        <scene sceneID="l57-cY-jtr">
+            <objects>
+                <viewController id="Iw7-Ac-5bc" customClass="ViewController" customModule="Watch_AppKh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qme-gz-0LY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Evening" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20w-1B-laX">
+                                <rect key="frame" x="97.5" y="164" width="219.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="if you have an Apple Watch, you can pair it with your iPhone here." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qM5-gB-wEg">
+                                <rect key="frame" x="30" y="236" width="354" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applewatch" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Gu8-xB-Nl7">
+                                <rect key="frame" x="147" y="388" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="3LF-MZ-Ker"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="wYP-A4-ytP"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8d-Aj-SuR">
+                                <rect key="frame" x="95" y="307" width="224" height="31"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Learn more about Apple Watch"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fS-K2-S2Q">
+                                <rect key="frame" x="40" y="733" width="334" height="40"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ymf-9p-weT"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Paring">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k4t-gS-SO4"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="l8d-Aj-SuR" firstAttribute="centerX" secondItem="qme-gz-0LY" secondAttribute="centerX" id="8xF-t8-jCL"/>
+                            <constraint firstItem="k4t-gS-SO4" firstAttribute="bottom" secondItem="4fS-K2-S2Q" secondAttribute="bottom" constant="40" id="K5H-4x-3g5"/>
+                            <constraint firstItem="Gu8-xB-Nl7" firstAttribute="centerY" secondItem="qme-gz-0LY" secondAttribute="centerY" id="LJZ-lg-rdr"/>
+                            <constraint firstItem="20w-1B-laX" firstAttribute="centerX" secondItem="qme-gz-0LY" secondAttribute="centerX" id="MXv-oj-bl1"/>
+                            <constraint firstItem="qM5-gB-wEg" firstAttribute="top" secondItem="20w-1B-laX" secondAttribute="bottom" constant="30" id="Xye-Cm-VDZ"/>
+                            <constraint firstItem="k4t-gS-SO4" firstAttribute="trailing" secondItem="qM5-gB-wEg" secondAttribute="trailing" constant="30" id="Ydp-uE-Sue"/>
+                            <constraint firstItem="Gu8-xB-Nl7" firstAttribute="centerX" secondItem="qme-gz-0LY" secondAttribute="centerX" id="ZDO-ec-ejA"/>
+                            <constraint firstItem="qM5-gB-wEg" firstAttribute="leading" secondItem="k4t-gS-SO4" secondAttribute="leading" constant="30" id="gLP-oN-wSs"/>
+                            <constraint firstItem="4fS-K2-S2Q" firstAttribute="leading" secondItem="k4t-gS-SO4" secondAttribute="leading" constant="40" id="k4j-fH-0AL"/>
+                            <constraint firstItem="Gu8-xB-Nl7" firstAttribute="top" secondItem="l8d-Aj-SuR" secondAttribute="bottom" constant="50" id="m6y-em-55u"/>
+                            <constraint firstItem="k4t-gS-SO4" firstAttribute="trailing" secondItem="4fS-K2-S2Q" secondAttribute="trailing" constant="40" id="vTb-Br-y9c"/>
+                            <constraint firstItem="l8d-Aj-SuR" firstAttribute="top" secondItem="qM5-gB-wEg" secondAttribute="bottom" constant="30" id="x64-YC-UjX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Watch" image="applewatch.side.right" catalog="system" id="FPS-Lz-Ufy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57k-9w-bms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569.56521739130437" y="-361.60714285714283"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="a6Y-EO-btv">
+            <objects>
+                <viewController id="Gq1-Ie-O7n" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VTj-vO-GvV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UWn-Si-ozt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Discover" image="safari.fill" catalog="system" id="0HF-wT-xiP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3FY-Dr-TWe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759" y="141"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RZR-ot-NGU">
+            <objects>
+                <tabBarController id="NJs-RH-5nb" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HV2-WS-A3A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Iw7-Ac-5bc" kind="relationship" relationship="viewControllers" id="tUE-55-Hp1"/>
+                        <segue destination="CL9-VW-tOF" kind="relationship" relationship="viewControllers" id="Atf-zo-GC3"/>
+                        <segue destination="Gq1-Ie-O7n" kind="relationship" relationship="viewControllers" id="Mgy-kg-2PY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tiY-Ci-L2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-459" y="141"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="applewatch" catalog="system" width="112" height="128"/>
+        <image name="applewatch.side.right" catalog="system" width="128" height="128"/>
+        <image name="applewatch.watchface" catalog="system" width="112" height="128"/>
+        <image name="safari.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
