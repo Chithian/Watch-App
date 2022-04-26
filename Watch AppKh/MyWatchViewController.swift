@@ -10,7 +10,7 @@ import UIKit
 class MyWatchViewController: UIViewController {
 
     @IBOutlet weak var startParingBtn: UIButton!
-    
+    @IBOutlet weak var learnMoreBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
